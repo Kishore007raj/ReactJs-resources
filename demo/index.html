@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <div id="app"></div> 
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script> <!-- React -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <!-- React DOM -->
+    <!-- <script type="text/javascript">
+    // now add a dom element method to get id from url
+    const demo_one = document.getElementById("app"); // Select the div element with 'app' id
+
+    //step-2-create a h1 element
+    const header = document.createElement("h1");
+
+    //step-3-Create a new text node for the H1 element
+    const text = 'Develop. Preview. Ship.';
+    const headerContent = document.createTextNode(text);
+
+    //step-4-Append the text node to the H1 element
+    header.appendChild(headerContent);
+
+    //step-5-placing the h1 element inside the div element
+    demo_one.appendChild(header);
+    </script> -->
+
+    <!--Babel script-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> <!--adding babel for JSX to be converted-->
+    <script type="text/jsx">
+      const dom_node = document.getElementById('app');
+      const root = ReactDOM.createRoot(dom_node);
+      root.render(<h1>Develop. Preview. Ship.</h1>);
+    </script>
+  </body>
+</html>
